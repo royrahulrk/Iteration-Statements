@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iteration Statements</h1>
+    <br>
+    <p>1 Take a number from the user and print the count of digits in that number.
+
+        Note: You have to complete Find_Digits. No need to take any input. </p>
+        <pre>const Find_Digits = (N) => 
+            {
+              let count = 0;
+               while (N!==0){
+                 count++;
+                N= Math.floor(N/10);
+                 
+               }
+               return count;
+               
+                 
+            };</pre><br>
+        <p>2 Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.</p>
+        <pre>const Find_Five = (N) => 
+            {
+              let count = 0;
+              while (N!==0){
+                
+                if(N%5===0){
+                  count++;
+                }
+               N= Math.floor(N/10);
+              }
+              return count;
+                 
+            };</pre><br>
+            <p>3 You are given an integer 
+                N
+                , and your task is to find the sum of all the even integers starting from 
+                1
+                 upto 
+                N
+                 (
+                N
+                 inclusive).</p>
+                 <pre>const findSum = (n) => {
+  
+                    let sum=0;
+                    let N=1;
+                      while(N<=n){
+                        if(N%2===0){
+                         sum= N+sum;
+                        }
+                        N++;
+                      }
+                      return sum;
+                        
+                    };</pre><br>
+            <p>4 Write a program that takes a number from the user and get the sum of the digits present in the number. </p>
+                <pre>const Number_Sum = (N) => 
+                    {
+                      let sum=0;
+                      while(N!==0){
+                        
+                         sum= sum+ N%10;
+                         N = Math.floor(N / 10);
+                    
+                      }
+                      return sum;
+                        
+                    };</pre><br>
+        <p>5 Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.</p>
+        <pre>const Print_Odd = (N) => 
+            {
+              let n=2;
+              while(n<=N){
+                if(n%2!==0 || n==2){
+                 console.log(n);
+                }
+                n++;
+              }
+               
+            };</pre><br>
+        <p>6 Write a program which ask user for no of lines and print a pattern using an asterik  </p>
+        <pre>const Print_pattern = (N) => 
+            {
+               let a=0 
+               let string = "";
+               while(a<=N){
+                 let c=0
+                 while(c<a){
+                   string += "*";
+                   c++
+                 }
+                
+                a++
+                string += "\n";
+               }
+              console.log(string);
+            };</pre><br>
+        <p>7 Write a program which takes  a number from user and check whether number is prime number or not a prime number.</p>
+        <pre>
+            const Prime_Check = (N) => 
+{
+  let count=0;
+  for(let i=1;i<=N;i++){
+    if(N%i==0){
+      count++;
+    }
+  }
+  if(count==2){
+    return "YES";
+    
+  }else{
+    return "NO"
+  }
+  
+
+};
+
+        </pre><br>
+    <p>8 You are given an integer  N, and your task is to print all the integers starting from  1  till  N  ( N inclusive).</p>
+         <pre>const printNumbers = (n) => {
+            let a=0 
+             let string = "";
+             while(a<n){
+              a++
+              string += a+" ";
+             }
+            console.log(string);  
+          };
+          </pre><br>
+    <p>9 Write a program which takes a number from user and print the table.</p>
+    <pre>const Print_Table = (N) => 
+        {
+          a=1
+          string=""
+          while(a<=10){
+            const result =a*N
+            // console.log(`${N}*${a}=${result}`);
+            // console.log(N+ "*"+ a +"="+ result);
+            string+=N+ " * "+ a +" = "+ result
+            a++
+            string += "\n";
+          }
+          console.log(string)
+        };</pre>
+</body>
+</html>
